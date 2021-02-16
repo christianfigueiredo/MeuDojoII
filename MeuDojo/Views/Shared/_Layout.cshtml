@@ -20,11 +20,71 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Recepção</a></li>
-                    <li><a href="#">Gerencial</a></li>
-                    <li><a href="#">Atividade Física</a></li>
-                    <li><a href="#">Relatórios</a></li>
-                    
+                    <li>
+                        <a href="#" class=" dropdown-toggle" data-toggle="dropdown">
+                            Recepção
+                            <span class="caret">  </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Pré Cadastro", "PreCadastro", "Recepcao")</li>
+                            <li>@Html.ActionLink("Clientes", "Cliente", "Recepcao")</li>
+                            <li>@Html.ActionLink("Mapa de Clientes", "MapaDeCliente", "Recepcao")</li>
+
+                            <li class="nav-divider"> </li>
+                            <li>@Html.ActionLink("Agenda", "Agenda", "Recepcao")</li>
+                            <li>@Html.ActionLink("Agenda de Turmas", "AgendaDeTurma", "Recepcao")</li>
+                            <li>@Html.ActionLink("Agenda de Serviços", "AgendaDeServico", "Recepcao")</li>
+                            <li>@Html.ActionLink("Aula Experimental", "AulaExperimental", "Recepcao")</li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a href="#" class=" dropdown-toggle" data-toggle="dropdown">
+                            Gerencial
+                            <span class="caret">
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Receber em Espécie", "ReceberEmEspecie", "Gerencial")</li>
+                            <li>@Html.ActionLink("Emissão de Boleto", "EmissaoDeBoleto", "Gerencial")</li>
+                            <li>@Html.ActionLink("Desconto Familiar", "DescontoFamiliar", "Gerencial")</li>
+                            <li>@Html.ActionLink("Contas a Pagar", "ContasAPagar", "Gerencial")</li>
+                            <li>@Html.ActionLink("Caixa", "Caixa", "Gerencial")</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class=" dropdown-toggle" data-toggle="dropdown">
+                            Atividade Física
+                            <span class="caret">
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Ficha de Exercícios", "FichaDeExercicio", "AtividadeFisica")</li>
+                            <li>@Html.ActionLink("Avaliação Física", "AvaliacaoFisica", "AtividadeFisica")</li>
+                            <li>@Html.ActionLink("Treinos", "Treino", "AtividadeFisica")</li>
+                            <li>@Html.ActionLink("Treinos Especiais", "TreinoEspecial", "AtividadeFisica")</li>
+                            <li class="nav-divider"> </li>
+                            <li>@Html.ActionLink("Campeonatos", "Campeonato", "AtividadeFisica")</li>
+                            <li>@Html.ActionLink("Inscrição em Campeonatos", "InscricaoEmCampeonato", "AtividadeFisica")</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class=" dropdown-toggle" data-toggle="dropdown">
+                            Relatórios
+                            <span class="caret">
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Presenças", "Presenca", "Relatorios")</li>
+                            <li>@Html.ActionLink("Clientes Ativos", "ClienteAtivo", "Relatorios")</li>
+                            <li>@Html.ActionLink("Clientes Ausentes", "ClienteAuxente", "Relatorios")</li>
+                            <li class="nav-divider"> </li>
+                            <li>@Html.ActionLink("Fluxo de Caixa", "FluxoDeCaixa", "Relatorios")</li>
+                            <li>@Html.ActionLink("Boletos Emitidos", "BoletoEmitido", "Relatorios")</li>
+                            <li>@Html.ActionLink("Pagamentos em Espécie", "PagamentoEmEspecie", "Relatorios")</li>
+                        </ul>
+                    </li>
+
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>@Html.ActionLink("Sobre", "Sobre", "Home")</li>
